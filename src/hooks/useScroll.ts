@@ -5,7 +5,7 @@ export const useScroll = () => {
         document.body.getBoundingClientRect()
     );
 
-    const [scrollY, setScrollY] = useState(bodyOffset.top);
+    const [scrollY, setScrollY] = useState<number>(bodyOffset?.top);
 
     const listener = () => {
         setBodyOffset(document.body.getBoundingClientRect());

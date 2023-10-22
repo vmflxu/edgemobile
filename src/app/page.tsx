@@ -1,17 +1,20 @@
 import { headerImages } from '@/values/headerImages'
 import Image from 'next/image'
+import HomeImages from './_fragments/HomeImages'
+import { Flex } from '@/style/common/Flex'
+import ContentSection from './_fragments/home/ContentSection'
+import PictureModal from './_fragments/modal/ImgDetailModal'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen h-[2000px]">
-      <div className={'w-full'}>
-        <Image
-          src={headerImages[0]}
-          objectFit={'cover'}
-          sizes={"100%"}
-          alt='bg'
-        />
-      </div>
-    </main>
+    <>
+      <HomeImages />
+      <Flex.HStack className={'w-full h-fit'}>
+        <aside className={'invisible flex-1 md:visible'}></aside>
+        <ContentSection />
+        <aside className={'invisible flex-1 md:visible'}></aside>
+      </Flex.HStack>
+      <PictureModal />
+    </>
   )
 }

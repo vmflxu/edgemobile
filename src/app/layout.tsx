@@ -3,8 +3,8 @@ import { Noto_Sans_KR } from 'next/font/google'
 import './globals.css'
 import Nav from './_fragments/Nav';
 import Header from './_fragments/Header';
-
-const notoKr = Noto_Sans_KR({ subsets: ['latin'] });
+import Footer from './_fragments/footer/Footer';
+import Counsel from './_fragments/Counsel';
 
 export const metadata: Metadata = {
   title: '엣지이동식주택',
@@ -18,11 +18,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={notoKr.className}>
+      <body className={'font-pretendard'}>
         <Header>
           <Nav />
         </Header>
-        {children}
+        <main className="flex flex-col min-h-screen h-fit pb-16 gap-16">
+          {children}
+        </main>
+        <Footer />
+        <Counsel />
       </body>
     </html>
   )

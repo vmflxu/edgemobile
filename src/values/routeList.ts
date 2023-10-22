@@ -4,10 +4,6 @@ export type RouteInfo = {
 }
 export const routes: RouteInfo[] = [
     {
-        title: '처음으로',
-        url: '/',
-    },
-    {
         title: '회사소개',
         url: '/about',
     },
@@ -20,7 +16,7 @@ export const routes: RouteInfo[] = [
         url: '/products',
     },
     {
-        title: '상담문의',
+        title: '오시는길',
         url: '/contact',
     },
 ]
