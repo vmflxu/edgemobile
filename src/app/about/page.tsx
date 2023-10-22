@@ -1,6 +1,5 @@
 import { Flex } from '@/style/common/Flex'
 import React from 'react'
-import about_1 from '$/images/about/about_1.jpg'
 import Image from 'next/image'
 
 const About = () => {
