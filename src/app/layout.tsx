@@ -22,7 +22,7 @@ export default function RootLayout({
         <Header>
           <Nav />
         </Header>
-        <main className="flex flex-col min-h-screen h-fit pb-16 gap-16">
+        <main className="flex flex-col min-h-screen h-fit gap-16">
           {children}
         </main>
         <Footer />

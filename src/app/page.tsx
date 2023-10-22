@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <HomeImages />
-      <Flex.HStack className={'w-full h-fit'}>
+      <Flex.HStack className={'w-full h-fit pb-16'}>
         <aside className={'invisible flex-1 md:visible'}></aside>
         <ContentSection />
         <aside className={'invisible flex-1 md:visible'}></aside>
